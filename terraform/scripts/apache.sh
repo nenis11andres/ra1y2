@@ -44,10 +44,10 @@ done
 
 # Clonar el repositorio si no existe
 cd /home/admin || cd /root
-if [ ! -d "ra1y2" ]; then
-    git clone https://github.com/nenis11andres/ra1y2.git
+if [ ! -d "RA2-ec2" ]; then
+    git clone https://github.com/nenis11andres/RA2-ec2.git
 fi
-cd ra1y2/docker
+cd RA2-ec2/docker
 
 # Levantar contenedor Apache usando Docker Compose
 docker compose up -d apache || {
